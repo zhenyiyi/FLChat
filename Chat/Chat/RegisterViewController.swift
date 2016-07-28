@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController, RegisterViewInterface {
+class RegisterViewController: UIViewController  {
 
     @IBOutlet weak var username: UITextField!
     
@@ -32,8 +32,9 @@ class RegisterViewController: UIViewController, RegisterViewInterface {
         _eventHandlder?.reigister(username.text, password: userpassword.text);
     }
     
-    func registerCompletion(success: Bool, message: String?) {
-        presentError(message!);
-        leftBarButtonClick(nil);
+    override func requestSuccess(reponse: AnyObject?) {
+          leftBarButtonClick(nil);
     }
+    
+    
 }

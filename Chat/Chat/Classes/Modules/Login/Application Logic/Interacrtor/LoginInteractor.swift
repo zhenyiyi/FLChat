@@ -14,7 +14,13 @@ class LoginInteractor: NSObject, LoginModuleInterface {
     
     func login(username: String?, password: String?) {
         if username!.isEmpty || password!.isEmpty {
-            userInterface?.completionLogin("用户名或密码不能为空");
+            userInterface?.loginFailure("用户名或密码不能为空");
+        }else{
+            EMClient.sharedClient().asyncLoginWithUsername(username, password: password, success: { [unowned self]() in
+                    self.userInterface?.setupMainViewController();
+                }, failure: { (error: EMError!) in
+                    self.userInterface?.loginFailure("error.errorDescription");
+            })
         }
     }
 }

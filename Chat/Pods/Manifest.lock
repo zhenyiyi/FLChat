@@ -2,17 +2,20 @@ PODS:
   - Alamofire (3.4.1)
   - HyphenateFullSDK (3.1.4)
   - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4.1)
   - HyphenateFullSDK (~> 3.1.4)
   - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.12)
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   HyphenateFullSDK: 0640f9710da83da7a08928f074da718ed3368277
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
 
-PODFILE CHECKSUM: 3ec3057dc2b1de189f19f85b0b22f3ab93ae9fb4
+PODFILE CHECKSUM: 1bbf6b56439ec2efb2a5a4d755ab85c75f12e84d
 
 COCOAPODS: 1.0.1

@@ -15,7 +15,7 @@ protocol AddLeftButtonRenderer {
 }
 
 protocol AddRightButtonRenderer {
-    func addRightButton();
+    func addRightButton(title: String);
 }
 
 protocol ErrorPopoverRenderer {
@@ -26,7 +26,35 @@ protocol SettingDependence {
     func setTheInterface();
 }
 
-extension UIViewController: AddLeftButtonRenderer, AddRightButtonRenderer, ErrorPopoverRenderer, SettingDependence{
+protocol GetTheDestinationViewController {
+    func getTheDestinationViewController(viewControllerIdentifier: String, storyboardName: String) -> UIViewController ;
+}
+
+protocol PushToViewController {
+    func pushViewController(viewControllerIdentifier: String, storyboardName: String);
+}
+
+
+protocol TableViewAddHeaderRefresh {
+    func addHeaderRefresh(tableView: UITableView, block:()->());
+}
+
+protocol TableViewAddFooterRefresh {
+    func addFooterRefresh(tableView: UITableView, block:()->());
+}
+
+protocol ShowToastToViewController {
+    func showToast(mes: String?);
+    func showToast(mes: String?, hideAfterDelay seconds: Int);
+}
+
+protocol HideToastToViewController {
+    func HideToast();
+}
+
+
+extension UIViewController: AddLeftButtonRenderer, AddRightButtonRenderer, ErrorPopoverRenderer, SettingDependence
+{
     
     // MARK: AddLeftButtonRenderer
     func addLeftButton() {
@@ -38,8 +66,8 @@ extension UIViewController: AddLeftButtonRenderer, AddRightButtonRenderer, Error
     }
     
     // MARK: AddRightButtonRenderer
-    func addRightButton() {
-         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: ""), style: .Plain, target: self, action: #selector(UIViewController.rightBarButtonClick(_:)));
+    func addRightButton(title: String) {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: title, style: .Plain, target: self, action:  #selector(UIViewController.rightBarButtonClick(_:)));
     }
     
     func rightBarButtonClick(barButtonItem : UIBarButtonItem?)  {
@@ -56,6 +84,43 @@ extension UIViewController: AddLeftButtonRenderer, AddRightButtonRenderer, Error
     }
 }
 
+extension UIViewController : PushToViewController , GetTheDestinationViewController, TableViewAddHeaderRefresh, TableViewAddFooterRefresh {
+    
+    func pushViewController(viewControllerIdentifier: String, storyboardName: String) {
+        let viewController = getTheDestinationViewController(viewControllerIdentifier, storyboardName: storyboardName);
+        self.navigationController?.pushViewController(viewController, animated: true);
+    }
+    
+    func getTheDestinationViewController(viewControllerIdentifier: String, storyboardName: String)-> UIViewController {
+        let storyborad = UIStoryboard(name: storyboardName, bundle: nil);
+        return storyborad.instantiateViewControllerWithIdentifier(viewControllerIdentifier) ;
+    }
+    
+    
+    func addHeaderRefresh(tableView: UITableView, block: () -> ()) {
+        
+        
+    }
+    
+    func addFooterRefresh(tableView: UITableView, block: () -> ()) {
+        
+    }
+}
+
+
+extension UIViewController: RequestFinishedProtocol{
+    
+    //MARK: RequestFinishedProtocol
+    func requestSuccess(reponse: AnyObject?) {
+        
+    }
+    
+    func requestFailure(errorMessage: String?, error: AnyObject?) {
+        if errorMessage != nil {
+            presentError(errorMessage!);
+        }
+    }
+}
 
 
 

@@ -9,6 +9,7 @@
 import UIKit
 
 /*  登录接口 */
-protocol LoginViewInterface {
-    func completionLogin(error: String);
+protocol LoginViewInterface : GetTheDestinationViewController{
+    func loginFailure(errorMessage: String);
+    func setupMainViewController();
 }

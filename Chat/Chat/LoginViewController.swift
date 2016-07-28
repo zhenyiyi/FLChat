@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController ,LoginViewInterface {
+class LoginViewController: UIViewController ,LoginViewInterface  {
 
     var _eventHanlder : LoginInteractor?
     
@@ -30,8 +30,14 @@ class LoginViewController: UIViewController ,LoginViewInterface {
         _eventHanlder!.userInterface = self;
     }
     
-    func completionLogin(error: String) {
-        presentError(error);
+    func loginFailure(errorMessage: String) {
+        presentError(errorMessage);
+    }
+    
+    func setupMainViewController() {
+        let des = self.getTheDestinationViewController("tabbar", storyboardName: "Main");
+        let applicationDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        applicationDelegate.window?.rootViewController = des;
     }
     
 }

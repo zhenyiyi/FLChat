@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510858E21D49CA5700918CEA /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510858E11D49CA5700918CEA /* ArrayDataSource.swift */; };
+		510858FD1D49D34E00918CEA /* RecentChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510858FC1D49D34E00918CEA /* RecentChatViewController.swift */; };
+		510858FF1D49D48200918CEA /* RecentChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510858FE1D49D48200918CEA /* RecentChatInteractor.swift */; };
+		510859011D49D4A800918CEA /* RecentChatMoudleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859001D49D4A800918CEA /* RecentChatMoudleInterface.swift */; };
+		510859031D49D5AA00918CEA /* RecentChatInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859021D49D5AA00918CEA /* RecentChatInterface.swift */; };
+		510859061D49D88F00918CEA /* CommonCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859051D49D88F00918CEA /* CommonCellProtocol.swift */; };
+		510859081D49D90200918CEA /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859071D49D90200918CEA /* UITableViewCellExtension.swift */; };
+		5108590A1D49DA2600918CEA /* RecentChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859091D49DA2600918CEA /* RecentChatCell.swift */; };
+		5108590C1D49E0A600918CEA /* ArrayDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108590B1D49E0A600918CEA /* ArrayDataDelegate.swift */; };
+		5108590E1D49F37300918CEA /* PublicGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108590D1D49F37300918CEA /* PublicGroupViewController.swift */; };
+		510859101D49F5B400918CEA /* PulicGroupInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108590F1D49F5B400918CEA /* PulicGroupInteractor.swift */; };
+		510859121D49F5E900918CEA /* PublicGroupModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859111D49F5E900918CEA /* PublicGroupModuleInterface.swift */; };
+		510859151D49FAF600918CEA /* CommonDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859141D49FAF600918CEA /* CommonDefines.swift */; };
+		510859181D4A003100918CEA /* RequestFinishedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510859171D4A003100918CEA /* RequestFinishedProtocol.swift */; };
 		5129CCA31D48AFCC000C8F71 /* AppDependence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129CCA21D48AFCC000C8F71 /* AppDependence.swift */; };
-		5129CFA21D48BAB3000C8F71 /* RegisterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129CFA11D48BAB3000C8F71 /* RegisterViewInterface.swift */; };
 		5129CFA41D48BB0E000C8F71 /* ReigsterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129CFA31D48BB0E000C8F71 /* ReigsterInteractor.swift */; };
 		5129CFA61D48BB43000C8F71 /* RegisterModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5129CFA51D48BB43000C8F71 /* RegisterModuleInterface.swift */; };
 		5174E67F1D487EA000BED05F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5174E67E1D487EA000BED05F /* AppDelegate.swift */; };
@@ -79,9 +92,22 @@
 
 /* Begin PBXFileReference section */
 		1765A73D92C4B92AF554F3F7 /* Pods-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat/Pods-Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		510858E11D49CA5700918CEA /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		510858FC1D49D34E00918CEA /* RecentChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentChatViewController.swift; sourceTree = "<group>"; };
+		510858FE1D49D48200918CEA /* RecentChatInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentChatInteractor.swift; sourceTree = "<group>"; };
+		510859001D49D4A800918CEA /* RecentChatMoudleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentChatMoudleInterface.swift; sourceTree = "<group>"; };
+		510859021D49D5AA00918CEA /* RecentChatInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentChatInterface.swift; sourceTree = "<group>"; };
+		510859051D49D88F00918CEA /* CommonCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCellProtocol.swift; sourceTree = "<group>"; };
+		510859071D49D90200918CEA /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		510859091D49DA2600918CEA /* RecentChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentChatCell.swift; sourceTree = "<group>"; };
+		5108590B1D49E0A600918CEA /* ArrayDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataDelegate.swift; sourceTree = "<group>"; };
+		5108590D1D49F37300918CEA /* PublicGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicGroupViewController.swift; sourceTree = "<group>"; };
+		5108590F1D49F5B400918CEA /* PulicGroupInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulicGroupInteractor.swift; sourceTree = "<group>"; };
+		510859111D49F5E900918CEA /* PublicGroupModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicGroupModuleInterface.swift; sourceTree = "<group>"; };
+		510859141D49FAF600918CEA /* CommonDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonDefines.swift; sourceTree = "<group>"; };
+		510859171D4A003100918CEA /* RequestFinishedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFinishedProtocol.swift; sourceTree = "<group>"; };
 		5129CC9E1D48A745000C8F71 /* Chat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chat-Bridging-Header.h"; sourceTree = "<group>"; };
 		5129CCA21D48AFCC000C8F71 /* AppDependence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependence.swift; sourceTree = "<group>"; };
-		5129CFA11D48BAB3000C8F71 /* RegisterViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewInterface.swift; sourceTree = "<group>"; };
 		5129CFA31D48BB0E000C8F71 /* ReigsterInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReigsterInteractor.swift; sourceTree = "<group>"; };
 		5129CFA51D48BB43000C8F71 /* RegisterModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterModuleInterface.swift; sourceTree = "<group>"; };
 		5174E67B1D487EA000BED05F /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +192,255 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510858DF1D49CA4500918CEA /* CommonLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				510859161D4A001200918CEA /* RequestProtocol */,
+				510859131D49FAE800918CEA /* CommonDefines */,
+				510859041D49D86C00918CEA /* TableViewCellProtocol */,
+				510858E31D49CF9500918CEA /* ArrayDataDelegate */,
+				510858E01D49CA4500918CEA /* ArrayDataSource */,
+			);
+			path = CommonLibrary;
+			sourceTree = "<group>";
+		};
+		510858E01D49CA4500918CEA /* ArrayDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				510858E11D49CA5700918CEA /* ArrayDataSource.swift */,
+			);
+			path = ArrayDataSource;
+			sourceTree = "<group>";
+		};
+		510858E31D49CF9500918CEA /* ArrayDataDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5108590B1D49E0A600918CEA /* ArrayDataDelegate.swift */,
+			);
+			path = ArrayDataDelegate;
+			sourceTree = "<group>";
+		};
+		510858E41D49D33A00918CEA /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				510858E51D49D33A00918CEA /* Application Logic */,
+				510858E81D49D33A00918CEA /* Module Interface */,
+				510858E91D49D33A00918CEA /* User Interface */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		510858E51D49D33A00918CEA /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				510858E61D49D33A00918CEA /* Interacrtor */,
+				510858E71D49D33A00918CEA /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		510858E61D49D33A00918CEA /* Interacrtor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interacrtor;
+			sourceTree = "<group>";
+		};
+		510858E71D49D33A00918CEA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		510858E81D49D33A00918CEA /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		510858E91D49D33A00918CEA /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				510858EA1D49D33A00918CEA /* Presenter */,
+				510858EB1D49D33A00918CEA /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		510858EA1D49D33A00918CEA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		510858EB1D49D33A00918CEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		510858EC1D49D33A00918CEA /* RecentChat */ = {
+			isa = PBXGroup;
+			children = (
+				510858ED1D49D33A00918CEA /* Application Logic */,
+				510858F01D49D33A00918CEA /* Module Interface */,
+				510858F11D49D33A00918CEA /* User Interface */,
+			);
+			path = RecentChat;
+			sourceTree = "<group>";
+		};
+		510858ED1D49D33A00918CEA /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				510858EE1D49D33A00918CEA /* Interacrtor */,
+				510858EF1D49D33A00918CEA /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		510858EE1D49D33A00918CEA /* Interacrtor */ = {
+			isa = PBXGroup;
+			children = (
+				510858FE1D49D48200918CEA /* RecentChatInteractor.swift */,
+			);
+			path = Interacrtor;
+			sourceTree = "<group>";
+		};
+		510858EF1D49D33A00918CEA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		510858F01D49D33A00918CEA /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				510859001D49D4A800918CEA /* RecentChatMoudleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		510858F11D49D33A00918CEA /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				510858F21D49D33A00918CEA /* Presenter */,
+				510858F31D49D33A00918CEA /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		510858F21D49D33A00918CEA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		510858F31D49D33A00918CEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				510859091D49DA2600918CEA /* RecentChatCell.swift */,
+				510858FC1D49D34E00918CEA /* RecentChatViewController.swift */,
+				510859021D49D5AA00918CEA /* RecentChatInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		510858F41D49D33A00918CEA /* Square */ = {
+			isa = PBXGroup;
+			children = (
+				510858F51D49D33A00918CEA /* Application Logic */,
+				510858F81D49D33A00918CEA /* Module Interface */,
+				510858F91D49D33A00918CEA /* User Interface */,
+			);
+			path = Square;
+			sourceTree = "<group>";
+		};
+		510858F51D49D33A00918CEA /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				510858F61D49D33A00918CEA /* Interacrtor */,
+				510858F71D49D33A00918CEA /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		510858F61D49D33A00918CEA /* Interacrtor */ = {
+			isa = PBXGroup;
+			children = (
+				5108590F1D49F5B400918CEA /* PulicGroupInteractor.swift */,
+			);
+			path = Interacrtor;
+			sourceTree = "<group>";
+		};
+		510858F71D49D33A00918CEA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		510858F81D49D33A00918CEA /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				510859111D49F5E900918CEA /* PublicGroupModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		510858F91D49D33A00918CEA /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				510858FA1D49D33A00918CEA /* Presenter */,
+				510858FB1D49D33A00918CEA /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		510858FA1D49D33A00918CEA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		510858FB1D49D33A00918CEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5108590D1D49F37300918CEA /* PublicGroupViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		510859041D49D86C00918CEA /* TableViewCellProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				510859051D49D88F00918CEA /* CommonCellProtocol.swift */,
+			);
+			path = TableViewCellProtocol;
+			sourceTree = "<group>";
+		};
+		510859131D49FAE800918CEA /* CommonDefines */ = {
+			isa = PBXGroup;
+			children = (
+				510859141D49FAF600918CEA /* CommonDefines.swift */,
+			);
+			path = CommonDefines;
+			sourceTree = "<group>";
+		};
+		510859161D4A001200918CEA /* RequestProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				510859171D4A003100918CEA /* RequestFinishedProtocol.swift */,
+			);
+			path = RequestProtocol;
+			sourceTree = "<group>";
+		};
 		5174E6721D487EA000BED05F = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +510,7 @@
 		51FC62EE1D488E2E00816280 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				510858DF1D49CA4500918CEA /* CommonLibrary */,
 				51FC62EF1D488E2E00816280 /* Categories */,
 				51FC62F11D488E2E00816280 /* Clock */,
 				51FC62F41D488E2E00816280 /* Model */,
@@ -248,6 +524,7 @@
 			isa = PBXGroup;
 			children = (
 				51FC634C1D48931F00816280 /* UIViewControllerExtension.swift */,
+				510859071D49D90200918CEA /* UITableViewCellExtension.swift */,
 				51FC62F01D488E2E00816280 /* NSCalendar+CalendarAdditions.swift */,
 			);
 			path = Categories;
@@ -300,6 +577,9 @@
 		51FC62FF1D488E2E00816280 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				510858E41D49D33A00918CEA /* Mine */,
+				510858EC1D49D33A00918CEA /* RecentChat */,
+				510858F41D49D33A00918CEA /* Square */,
 				51FC634E1D48997E00816280 /* Login */,
 				51FC63561D48997E00816280 /* Register */,
 				51FC63001D488E2E00816280 /* Add */,
@@ -610,7 +890,6 @@
 			isa = PBXGroup;
 			children = (
 				51FC62EB1D488CE000816280 /* RegisterViewController.swift */,
-				5129CFA11D48BAB3000C8F71 /* RegisterViewInterface.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -816,16 +1095,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5108590A1D49DA2600918CEA /* RecentChatCell.swift in Sources */,
 				51FC63491D488E2E00816280 /* ListWireframe.swift in Sources */,
 				51FC63471D488E2E00816280 /* ListViewController.swift in Sources */,
 				51FC63371D488E2E00816280 /* AddPresenter.swift in Sources */,
 				51FC63401D488E2E00816280 /* ListDataManager.swift in Sources */,
+				510859101D49F5B400918CEA /* PulicGroupInteractor.swift in Sources */,
 				51FC635F1D489A0600816280 /* LoginViewInterface.swift in Sources */,
 				51FC633C1D488E2E00816280 /* AddWireframe.swift in Sources */,
 				51FC63361D488E2E00816280 /* AddModuleInterface.swift in Sources */,
 				51FC63441D488E2E00816280 /* UpcomingDisplayDataCollection.swift in Sources */,
 				51FC633B1D488E2E00816280 /* AddViewInterface.swift in Sources */,
 				51FC633A1D488E2E00816280 /* AddViewController.swift in Sources */,
+				510858E21D49CA5700918CEA /* ArrayDataSource.swift in Sources */,
 				51FC63481D488E2E00816280 /* ListViewInterface.swift in Sources */,
 				51FC632B1D488E2E00816280 /* Clock.swift in Sources */,
 				51FC63651D48A2E600816280 /* LoginInteractor.swift in Sources */,
@@ -833,9 +1115,11 @@
 				51FC633D1D488E2E00816280 /* ListInteractor.swift in Sources */,
 				51FC632E1D488E2E00816280 /* TodoItem.swift in Sources */,
 				51FC63331D488E2E00816280 /* AddInteractor.swift in Sources */,
+				510859061D49D88F00918CEA /* CommonCellProtocol.swift in Sources */,
+				510859011D49D4A800918CEA /* RecentChatMoudleInterface.swift in Sources */,
 				51FC63461D488E2E00816280 /* UpcomingDisplaySection.swift in Sources */,
 				51FC632C1D488E2E00816280 /* DeviceClock.swift in Sources */,
-				5129CFA21D48BAB3000C8F71 /* RegisterViewInterface.swift in Sources */,
+				510859181D4A003100918CEA /* RequestFinishedProtocol.swift in Sources */,
 				51FC62EA1D488A8700816280 /* LoginViewController.swift in Sources */,
 				51FC632F1D488E2E00816280 /* CoreDataStore.swift in Sources */,
 				51FC632A1D488E2E00816280 /* NSCalendar+CalendarAdditions.swift in Sources */,
@@ -843,20 +1127,28 @@
 				51FC63311D488E2E00816280 /* TODO.xcdatamodeld in Sources */,
 				5129CCA31D48AFCC000C8F71 /* AppDependence.swift in Sources */,
 				51FC63301D488E2E00816280 /* ManagedTodoItem.swift in Sources */,
+				510859081D49D90200918CEA /* UITableViewCellExtension.swift in Sources */,
 				5174E67F1D487EA000BED05F /* AppDelegate.swift in Sources */,
 				51FC634D1D48931F00816280 /* UIViewControllerExtension.swift in Sources */,
 				51FC62EC1D488CE000816280 /* RegisterViewController.swift in Sources */,
+				510858FF1D49D48200918CEA /* RecentChatInteractor.swift in Sources */,
 				51FC63351D488E2E00816280 /* AddModuleDelegateInterface.swift in Sources */,
+				5108590E1D49F37300918CEA /* PublicGroupViewController.swift in Sources */,
 				51FC63631D489B8000816280 /* LoginModuleInterface.swift in Sources */,
 				51FC63321D488E2E00816280 /* RootWireframe.swift in Sources */,
 				51FC63431D488E2E00816280 /* UpcomingDisplayData.swift in Sources */,
 				51FC63341D488E2E00816280 /* AddDataManager.swift in Sources */,
+				510859031D49D5AA00918CEA /* RecentChatInterface.swift in Sources */,
 				51FC633F1D488E2E00816280 /* UpcomingItem.swift in Sources */,
+				510859151D49FAF600918CEA /* CommonDefines.swift in Sources */,
+				510858FD1D49D34E00918CEA /* RecentChatViewController.swift in Sources */,
 				51FC63421D488E2E00816280 /* ListPresenter.swift in Sources */,
 				51FC63451D488E2E00816280 /* UpcomingDisplayItem.swift in Sources */,
 				5129CFA41D48BB0E000C8F71 /* ReigsterInteractor.swift in Sources */,
 				51FC632D1D488E2E00816280 /* NearTermDateRelation.swift in Sources */,
+				5108590C1D49E0A600918CEA /* ArrayDataDelegate.swift in Sources */,
 				5129CFA61D48BB43000C8F71 /* RegisterModuleInterface.swift in Sources */,
+				510859121D49F5E900918CEA /* PublicGroupModuleInterface.swift in Sources */,
 				51FC63391D488E2E00816280 /* AddPresentationTransition.swift in Sources */,
 				51FC63381D488E2E00816280 /* AddDismissalTransition.swift in Sources */,
 				51FC63411D488E2E00816280 /* ListModuleInterface.swift in Sources */,
@@ -1007,7 +1299,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheyaoshi.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1024,7 +1316,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cheyaoshi.Chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
